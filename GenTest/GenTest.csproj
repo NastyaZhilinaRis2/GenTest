@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EE780189-4374-41CE-95B3-0538F62AF5D8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GenTest</RootNamespace>
+    <AssemblyName>GenTest</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>packages\MySqlConnector.2.2.5\lib\net471\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Diagnostics.DiagnosticSource.6.0.0\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Avtorizaciya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avtorizaciya.Designer.cs">
+      <DependentUpon>Avtorizaciya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bally_studenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Bally_studenta.Designer.cs">
+      <DependentUpon>Bally_studenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hesh.cs" />
+    <Compile Include="menu_administraciya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_administraciya.Designer.cs">
+      <DependentUpon>menu_administraciya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_prepod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_prepod.Designer.cs">
+      <DependentUpon>menu_prepod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menu_student.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menu_student.Designer.cs">
+      <DependentUpon>menu_student.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Peremennye.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registraciya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registraciya.Designer.cs">
+      <DependentUpon>registraciya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sbros_parol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sbros_parol.Designer.cs">
+      <DependentUpon>sbros_parol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sis_admin_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sis_admin_menu.Designer.cs">
+      <DependentUpon>sis_admin_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="students_prepod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="students_prepod.Designer.cs">
+      <DependentUpon>students_prepod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tabel_uspevaemosti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tabel_uspevaemosti.Designer.cs">
+      <DependentUpon>tabel_uspevaemosti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="temy_test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="temy_test.Designer.cs">
+      <DependentUpon>temy_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test_prepod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test_prepod.Designer.cs">
+      <DependentUpon>test_prepod.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Avtorizaciya.resx">
+      <DependentUpon>Avtorizaciya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bally_studenta.resx">
+      <DependentUpon>Bally_studenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_administraciya.resx">
+      <DependentUpon>menu_administraciya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_prepod.resx">
+      <DependentUpon>menu_prepod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menu_student.resx">
+      <DependentUpon>menu_student.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="registraciya.resx">
+      <DependentUpon>registraciya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sbros_parol.resx">
+      <DependentUpon>sbros_parol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sis_admin_menu.resx">
+      <DependentUpon>sis_admin_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="students_prepod.resx">
+      <DependentUpon>students_prepod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tabel_uspevaemosti.resx">
+      <DependentUpon>tabel_uspevaemosti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temy_test.resx">
+      <DependentUpon>temy_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test_prepod.resx">
+      <DependentUpon>test_prepod.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\иконка.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\назад.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\глазик.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\вопрос.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\пароль.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\логин1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\назад.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\стрелка.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\лупа.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\обновить.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\вопрос2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\добавить.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\удалить.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\обновить2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
