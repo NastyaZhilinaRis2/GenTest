@@ -1,0 +1,7 @@
+G:\ООП\ООП3\ООП3\bin\Release\ООП3.exe.config
+G:\ООП\ООП3\ООП3\bin\Release\ООП3.exe
+G:\ООП\ООП3\ООП3\bin\Release\ООП3.pdb
+G:\ООП\ООП3\ООП3\obj\Release\ООП3.csproj.AssemblyReference.cache
+G:\ООП\ООП3\ООП3\obj\Release\ООП3.csproj.CoreCompileInputs.cache
+G:\ООП\ООП3\ООП3\obj\Release\ООП3.exe
+G:\ООП\ООП3\ООП3\obj\Release\ООП3.pdb
